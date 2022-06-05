@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello world</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <!-- <link rel="stylesheet" href="/css/styles.css" /> -->
+    <link rel="stylesheet" href="main.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- <script src="/js/index.js"></script> -->
+  </head>
+  <body>
+      <div class="container-center bg-fourth">
+		<header class="header-container">
+			<nav class="navbar">
+				<ul>
+					<li><h2>Menu</h2></li>
+					<li id="list1" class="list" onclick="showMenu(1);">Registrar Profesor</li>
+					<li id="list2" class="list" onclick="showMenu(2);"">Asignar Sinodales</li>
+					<li id="list3" class="list" onclick="showMenu(3);">Fecha de Registro de equipo</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main-container">
+			<section class="section_options__container">
+				<div class="option-container1 opt-container">
+					<form class="form-container-form">
+						<div class="form-control">
+						  <label class="pl-1" for="firstname">Nombre:</label>
+						  <input class="mt-1 my-input" type="text" name="firstname" id="firstname" placeholder="Ingresa tu nombre" />
+						</div>
+						<div class="form-control">
+						  <label class="pl-1" for="paternalName">Apellido paterno:</label>
+						  <input class="mt-1 my-input" type="text" name="paternalName" id="paternalName" placeholder="Ingresa tu apellido paterno" />
+						</div>
+						<div class="form-control">
+						  <label class="pl-1" for="maternalName">Apellido materno:</label>
+						  <input class="mt-1 my-input" type="text" name="maternalName" id="maternalName" placeholder="Ingresa tu apellido materno" />
+						</div>
+						<div class="form-control">
+						  <label class="pl-1" for="phone">Teléfono:</label>
+						  <input class="mt-1 my-input" type="tel" name="phone" id="phone" placeholder="Ingresa tu teléfono" />
+						</div>
+						<div class="form-control">
+						  <label class="pl-1" for="email">Correo:</label>
+						  <input class="mt-1 my-input" type="email" name="email" id="email" placeholder="Ingresa tu correo" />
+						</div>
+						<div class="form-control">
+						  <label class="pl-1" for="registerAt">Registrado:</label>
+						  <input class="mt-1 my-input" type="date" name="registerAt" id="registerAt" />
+						</div>
+						<div class="form-control">
+						  <label class="pl-1" for="isESCOMUNIDAD">¿Es docente externo? (No pertenece a ESCOM)</label>
+						  <div>
+							<input class="ml-2" type="checkbox" name="isESCOMUNIDAD" id="isESCOMUNIDAD" />
+						  </div>
+						</div>
+						<div class="form-control">
+						  <label class="my-button" for="cv">Subir su CV</label>
+						  <div>
+							<input class="hidden" type="file" name="cv" id="cv" />
+						  </div>
+						</div>
+						<div class="w-100 mt-5">
+						  <button class="my-button-outline">Enviar</button>
+						</div>
+					  </form>
+				</div>
+				<div class="option-container2 opt-container">
+					<h2>Asignacion de Sinodales</h2>  
+					<div>
+						<table>
+							<thead>
+								<tr>
+									<th>id</th>
+									<th>Nombre</th>
+									<th>Director</th>
+									<th>Sinodal1</th>
+									<th>Sinodal2</th>
+									<th>Sinodal3</th>
+									<th>Asignar</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>option</th>
+									<th>option</th>
+									<th>option</th>
+									<th>option</th>
+									<th>option</th>
+									<th>option</th>
+									<th>option</th>
+								</tr>
+								<tr>
+									<th>option2</th>
+									<th>option2</th>
+									<th>option2</th>
+									<th>option2</th>
+									<th>option2</th>
+									<th>option2</th>
+									<th>option2</th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="option-container3 opt-container">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, id accusantium nisi ipsum sunt temporibus odio expedita suscipit similique ut autem sed deserunt quisquam quam consectetur repellat asperiores nobis! Aliquid.</p>
+				</div>
+			</section>
+		</main>
+        
+      </div>
+    </div>
+
+	<script src="./js/index.js"></script>
+  </body>
+</html>
